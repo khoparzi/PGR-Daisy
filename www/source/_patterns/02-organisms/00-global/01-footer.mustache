@@ -1,6 +1,41 @@
 <!-- Begin Footer -->
 <footer class="footer" role="contentinfo">
 	<div class="lc">
+		<div class="row">
+			{{> molecules-block-footer-contact }}
+			<div class="large-3 column">
+				<h4>Next Events</h4>
+				<ul class="events-list">
+					{{# event-posts }}
+						<li>{{> molecules-block-event-item(body: false, footer: true) }}</li>
+					{{/ event-posts }}
+				</ul>
+			</div>
+			<div class="large-3 column">
+				<h4>Latest Posts</h4>
+				<ul class="post-list">
+					{{# latest-posts }}
+						<li>{{> molecules-block-media(excerpt: false) }}</li>
+					{{/ latest-posts }}
+				</ul>
+			</div>
+			<div class="large-3 column">
+				<h4>Tags</h4>
+				<ul class="tag-list">
+					<li>design</li>
+					<li>film cultures</li>
+					<li>ethnography</li>
+					<li>fashion</li>
+				</ul>
+				<h4>Categories</h4>
+				<ul class="category-list">
+					<li>seminars</li>
+					<li>workshops</li>
+					<li>conferences</li>
+					<li>networking</li>
+				</ul>
+			</div>
+		</div>
 		<p class="copyright">&copy; 2013 Company Name. All rights reserved.</p>
 	</div>
 </footer>

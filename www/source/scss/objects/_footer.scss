@@ -1,0 +1,59 @@
+.footer {
+	clear: both;
+	overflow: hidden;
+	background: $gray-dark-2;
+	color: $white;
+
+	a {
+		color: $gray-light;
+	}
+	.column {
+		box-shadow: 1px 0 0 rgba(255,255,255,0.1);
+		// padding-top: $column-gutter;
+	}
+	h4 {
+		color: $white;
+		border-bottom: 2px solid $red;
+		margin-bottom: $column-gutter;
+	}
+	h2 {
+		color: $white;
+		font-size: $h5-font-size;
+	}
+	p {
+		color: $gray;
+		font-size: 0.8em;
+	}
+	.adr, .org {
+		color: $white;
+		font-size: 0.8em;
+		padding-top: $column-gutter*2;
+	}
+	.logo {
+		margin-top: $column-gutter;
+		margin-bottom: $column-gutter;
+	}
+	.block-thumb {
+		.date-block {
+			color: $blue;
+			margin-top: $column-gutter;
+		}
+	}
+	.tag-list {
+		@extend .cf;
+		padding-bottom: $column-gutter;
+	}
+	.tag-list li {
+		background: $gray-dark;
+		border: 1px solid $gray;
+		color: $gray-light;
+		float: left;
+		font-size: 0.8em;
+		padding: $column-gutter/2;
+		padding-left: $column-gutter/2;
+		margin: $column-gutter/4;
+	}
+	.events-list, .post-list {
+		@extend .visible-for-large-up;
+	}
+}
