@@ -1,0 +1,55 @@
+        <div class="single-event-detail">
+            <div class="event-detail">
+                <div class="event-speaker">
+                    <h4>Speakers</h4>
+                    <div class="media professor">
+                        <a href="{{url}}">{{> atoms-avatar}}</a>
+                        <div class="media-body">
+                            <h6><a href="{{url}}">Jacky Michaels</a></h6>
+                            <span>Senior Lecturer - Marketing</span>
+                        </div>
+                    </div>
+                    <div class="media professor">
+                        <a href="{{url}}">{{> atoms-avatar}}</a>
+                        <div class="media-body">
+                            <h6><a href="{{url}}">John Doe</a></h6>
+                            <span>Professor Of Economics</span>
+                        </div>
+                    </div>
+                </div>
+                <!--/event-speaker-->
+                <div class="event-info">
+                    <div class="medium-6 columns">
+                        <h4>Start</h4>
+                        <p>June 16, 2015 - 3:00 pm</p>
+                        <h4>End</h4>
+                        <p>June 16, 2015 - 8:00 pm</p>
+                    </div>
+                    <div class="medium-6 columns">
+                        <h4>Address</h4> {{event.location}}
+                        <a href="http://maps.google.com/?q={{event.location}}" target="_blank" class="map-link">&nbsp;&nbsp;View map <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <!--/event-info-->
+            </div>
+            <!--/event-detail-->
+            <div class="event-content">
+                <div>
+                    <p>{{event.description}}</p>
+                </div>
+                {{>organisms-event-schedule}}
+                <div class="calendar-import">
+                    <a class="btn" href="https://www.google.com/calendar/render?dates=20150616T150000/20150616T200000&amp;action=TEMPLATE&amp;text={{event.title}}&amp;location={{event.location}}&amp;details={{event.excerpt}}">+ GOOGLE CALENDAR</a>&nbsp;
+                    <a href="http://demo.cactusthemes.com/university?ical_id=200" class="btn">+ ICAL IMPORT</a>
+                </div>
+                <div class="event-more-detail">
+                    <h4>MORE DETAIL</h4>
+                    <h6 class="tel">Phone</h6>
+                    <p><a href="tel:098-765-4321">098-765-4321</a></p>
+                    <h6 class="email">Email</h6>
+                    <p><a href="mailto:example@email.com">example@email.com</a></p>
+                </div>
+            </div>
+            <!--/event-content-->
+        </div>
+        <!--/single-event-detail-->
