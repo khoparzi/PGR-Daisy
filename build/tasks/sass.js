@@ -4,7 +4,7 @@ module.exports = function(grunt) {
   grunt.config("sass", {
     options: {
       includePaths: ["bower_components/foundation/scss"],
-      sourceMap: true
+      sourceMap: false
     },
     dist: {
       files: [{
