@@ -114,6 +114,20 @@ $include-html-global-classes: $include-html-classes;
 // $oil         : #333333;
 // $jet         : #222222;
 // $black       : #000000;
+$gray : #808080;
+$gray-light : #f9f9f9;
+$gray-light-2 : #eee;
+$gray-light-3 : #ddd;
+$gray-med : #666;
+$gray-dark : #333;
+$gray-dark-2 : #131313;
+$red : #E82829;
+$pink : #E40079;
+$green : #7CBE30;
+$blue : #149DEB;
+$yellow : #FFF70B;
+$blue-complement: complement($blue);
+$blue-complement2: darken($blue-complement, 20%);
 
 // We use these as default colors throughout
 // $primary-color: #008CBA;

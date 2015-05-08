@@ -1,3 +1,19 @@
+/*
+Theme Name: WP-Starter
+Theme URI: http://themeawesome.com/wordpress-child-theme
+Description: A child theme of WP-Forge
+Author: ThemeAwesome.com
+Author URI: http://themeawesome.com/
+Template: wp-forge
+Version: 3.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.1.html
+Tags: light, gray, white, one-column, two-columns, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: wp-starter
+
+Start adding your theme specific styles below.
+*/
+
  /*------------------------------------*\
 	   {o}        _       _  
 	    |      __| | __ _(_)___ _   _ 
@@ -54,6 +70,12 @@
 	@import "foundation/components/type";
 	@import "foundation/components/offcanvas";
 	@import "foundation/components/visibility";
+
+/*------------------------------------*\
+    $COMPONENTS
+\*------------------------------------*/
+@import "objects/footer";
+@import "objects/article";
 
 // shame.scss
 @import "shame";
