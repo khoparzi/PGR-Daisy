@@ -61,6 +61,11 @@
     margin-bottom: 36px;
 }
 
+.noborder {
+    border: none;
+    margin-left: 0 !important;
+}
+
 .schedule-overview li {
     -moz-transition: all .3s ease-out;
     transition: all .3s ease-out;

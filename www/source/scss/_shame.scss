@@ -4,3 +4,94 @@
 // http://csswizardry.com/2013/04/shame-css/
 
 // if there is nothing in here, we are doing a good job!
+
+.content_wrap {
+	padding-top: 0;
+}
+
+// Events grid
+.date-list {
+    list-style-type: square;
+    margin-left: 0;
+    @extend .clearfix;
+}
+.box {
+    display: block;
+    float: left;
+    height: 165px;
+    width: 165px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    border-bottom: 3px solid #000;
+    font-weight: bold;
+}
+.box a {
+    display: block;
+    height: 96px;
+    width: 100%;
+    // padding: 27px 17px;
+    color: #000 !important;
+}
+.monthYear {
+    background-color: $blue;
+    text-transform: uppercase;
+    font-size: 24px;
+    cursor: default;
+    background-image: none;
+}
+.monthYear span {
+    letter-spacing: 2.5px;
+}
+.monthYear a.dateLink {
+    padding: 0;
+    color: $white !important;
+    padding-top: 40px;
+    height: 110px;
+    width: 100%;
+}
+.box .theDay {
+    font-size: 45px;
+    line-height: 50px;
+    margin-bottom: $column-gutter;
+}
+.box .theTitle {
+	height: 20px;
+    font-size: 11px;
+    letter-spacing: .5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.box ul {
+	list-style: none;
+	margin-left: 0;
+	@extend .clearfix;
+}
+.box .event {
+	height: 35px;
+	text-align: left;
+}
+.event span {
+	float: left;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 2px 8px 0;
+    // margin-bottom: 8px;
+    background: $gray;
+    color: #f8f8f8;
+    font-size: 9px;
+}
+.event .time-details {
+	float: right;
+}
+
+header.entry-header h1, h1.tribe-events-page-title {
+    border-bottom: 2px solid $pink;
+    color: $blue;
+    padding-bottom: $column-gutter;
+    margin: $column-gutter/2 0;
+}
+
+#tribe-events-pg-template {
+	max-width: none;
+}
