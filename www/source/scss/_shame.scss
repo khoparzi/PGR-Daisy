@@ -52,8 +52,7 @@
 }
 .box .theDay {
     font-size: 45px;
-    line-height: 50px;
-    margin-bottom: $column-gutter;
+    line-height: 55px;
 }
 .box .theTitle {
 	height: 20px;
@@ -94,4 +93,18 @@ header.entry-header h1, h1.tribe-events-page-title {
 
 #tribe-events-pg-template {
 	max-width: none;
+}
+
+// Footer styles
+#secondary-sidebar {
+	ol.vcalendar {
+		margin-left: 0;
+	}
+	h6 {
+		border-bottom: 2px solid $red;
+		margin-bottom: $column-gutter;
+	}
+	h4 {
+		font-size: $h5-font-size;
+	}
 }

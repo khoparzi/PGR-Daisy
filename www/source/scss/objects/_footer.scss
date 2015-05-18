@@ -1,15 +1,6 @@
-.footer {
-	clear: both;
-	overflow: hidden;
-	background: $gray-dark-2;
-	color: $white;
-
+.secondary-sidebar {
 	a {
 		color: $gray-light;
-	}
-	.column {
-		box-shadow: 1px 0 0 rgba(255,255,255,0.1);
-		// padding-top: $column-gutter;
 	}
 	h4 {
 		color: $white;
@@ -55,5 +46,8 @@
 	}
 	.events-list, .post-list {
 		@extend .visible-for-large-up;
+	}
+	ol.vcalendar {
+		margin-left: 0;
 	}
 }
