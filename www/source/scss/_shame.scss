@@ -53,6 +53,9 @@
 .box .theDay {
     font-size: 45px;
     line-height: 55px;
+    a {
+        height: auto;
+    }
 }
 .box .theTitle {
 	height: 20px;
@@ -69,6 +72,9 @@
 .box .event {
 	height: 35px;
 	text-align: left;
+    border-bottom: solid 1px #ccc;
+    margin-right: 5px;
+    padding-bottom: 10px;
 }
 .event span {
 	float: left;
@@ -76,8 +82,8 @@
     display: inline-block;
     padding: 2px 8px 0;
     // margin-bottom: 8px;
-    background: $gray;
-    color: #f8f8f8;
+    // background: $gray;
+    color: #000;
     font-size: 9px;
 }
 .event .time-details {
