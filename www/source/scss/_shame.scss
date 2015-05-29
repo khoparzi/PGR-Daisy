@@ -147,3 +147,25 @@ header.entry-header h1, h1.tribe-events-page-title {
 	h4 {
 		font-size: $h5-font-size;
 	}
+}
+
+// Front grid
+.grid-item {
+    float: left;
+    width: 50%;
+    img {
+        max-height: 240px;
+        margin-bottom: 0;
+        width: auto;
+    }
+    .entry-title {
+        background-color: #ccc;
+        background-color: rgba(204, 204, 204, 0.9);
+        border-bottom: #333 solid 5px;
+        position: absolute;
+        right: 15px;
+        bottom: 0;
+        width: 90%;
+        padding: 10px;
+    }
+}
