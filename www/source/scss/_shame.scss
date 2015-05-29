@@ -90,6 +90,40 @@
 	float: right;
 }
 
+/* Our PGRs */
+.pgr-listing {
+	list-style: none;
+	margin-left: 0 !important;
+	li {
+        float: left;
+		box-shadow: 0 0 1px rgba(0,0,0,0.1);
+		margin: $column-gutter .3rem;
+        width: 45%;
+	}
+	.name {
+		@extend .clearfix;
+		color: $red;
+	}
+}
+
+.pgr_profile {
+    .entry-summary {
+        @extend .row;
+        span, strong {
+            margin-bottom: $column-gutter;
+        }
+
+        .thumbnail {
+            @extend .large-4;
+            @extend .columns;
+        }
+        .research-title, .email {
+            @extend .large-8;
+            @extend .columns;
+        }
+    }
+}
+
 header.entry-header h1, h1.tribe-events-page-title {
     border-bottom: 2px solid $pink;
     color: $blue;
@@ -113,4 +147,3 @@ header.entry-header h1, h1.tribe-events-page-title {
 	h4 {
 		font-size: $h5-font-size;
 	}
-}
